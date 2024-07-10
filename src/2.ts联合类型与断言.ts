@@ -48,7 +48,7 @@ let ele: HTMLElement | null = document.getElementById('app')
 ele?.style.background // js 可选链操作符号
 
 // 断言成any 再断言成某个类型
-let str: string | number
-str! as any as boolean
+let str: string | number | boolean
+str! as boolean as true
 
 export {}
